@@ -24,7 +24,7 @@ class Controller:
         self.click_event = Event()
         self.app = App(f"{IMAGES_PATH}", self.click_event)
         self.running=False
-        _, self.file_lines=create_dict_number_sorted(read_file("./Demo/backend/sentence.txt"))
+        _, self.file_lines=create_dict_number_sorted(read_file("backend\sentence.txt"))
         self.line_pattern = '^\d+(?:\.\d*)?\s*'
         self.client = AnimaRobotClient("localhost:9000")
         print(self.client.init())
