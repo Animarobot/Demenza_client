@@ -1,0 +1,14 @@
+1. Buongiorno, sono l'assistente del dottore. Ti farò alcune domande che gli servono per conoscerti. Prima di tutto, qual è il tuo nome?
+2. E dimmi, qual è il tuo cognome?
+3. Riesci a dirmi la data di oggi? e anche che giorno della settimana?
+4. Dimmi, la città, la regione, e lo stato in cui ti trovi
+5. Ora ti dirò 3 parole che devi cercare di ricordare fino alla fine della nostra conversazione. Le tre parole sono: Aereo, Finestra e Ombrello
+6.1 Puoi dirmi quanto fa 80-25?
+6.2 Puoi dirmi quanto fa 5 per 4?
+6.3 Puoi dirmi quanto fa 13+17?
+6.4 Puoi dirmi quanto fa 39 diviso 3?
+7. Sai riconoscere i 2 oggetti che vengono mostrati a schermo in questo momento? Se si, dimmi cosa sono.
+8. Sono rimaste solo un paio di domande, abbiamo quasi finito. Ti chiedo di ripetere questo piccolo scioglilingua: Tre tigri contro tre tigri.
+9. Prima di salutarci, ti chiedo le 3 parole che ci siamo detti prima. Riesci a ricordarle?
+10. Perfetto e con questo è tutto. Grazie per aver risposto alle mie domande, è stato un piacere parlare con te!
+
