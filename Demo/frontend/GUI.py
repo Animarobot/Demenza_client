@@ -27,8 +27,6 @@ class App(Tk):
         self.resizable(False, False)
         self.title("Demo")
 
-        self._stop = Event()
-
         try:
             self.width, self.height = self.winfo_screenwidth(), self.winfo_screenheight()
             self.canvas_width = int(self.width * 0.75)  # Il canvas occupa il 75% della larghezza dello schermo

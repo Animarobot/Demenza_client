@@ -4,13 +4,10 @@ evaluate
 wave
 numpy
 pydub
-warnings
-re
-random
-threading
 wave
 webrtcvad
-tkinter
 PIL
-time
 setproctitle
+adafruit-circuitpython-motorkit
+adafruit-blinka 
+board 

@@ -1,9 +1,8 @@
 import numpy as np
 import wave
 import pyaudio
-import torch
 from webrtcvad import Vad
-import asyncio
+from threading import Event
 
 vad=Vad()
 audio_chunk_size = 2560
@@ -14,7 +13,6 @@ vocal_activity_lenght = audio_chunk_size//vad_size
 record_duration_seconds = 10
 
 record_pause_seconds = 1
-
 frame_rate=16000
 
 min_record_duration_seconds = 2
@@ -30,10 +28,11 @@ def save_audio_to_file(audio_data, sample_rate, filename):
         wf.setframerate(sample_rate)
         wf.writeframes(audio_data.tobytes())  # Scrive i dati audio
 
-async def record_audio_until_silence(client, sample_rate=16000, channels=1):
+async def record_audio_until_silence(client, event, sample_rate=16000, channels=1,):
     """Registra audio dal microfono fino a quando non c'è più parlato."""
 
     p = pyaudio.PyAudio()
+    event.clear()
 
     try:
 
@@ -75,8 +74,8 @@ async def record_audio_until_silence(client, sample_rate=16000, channels=1):
         p.terminate()
 
         results = await websocket.recv()
-
-        return results
+        event.set()
+        return results, event
 
     except Exception as e:
         print("Errore nell'esecuzione di asyncio:", e)
