@@ -1,8 +1,8 @@
 numpy
 pydub
 wave
-webrtcvad
-Pillow
+webrtcvad-wheels
+pillow
 setproctitle
 adafruit-circuitpython-motorkit
 adafruit-blinka 
