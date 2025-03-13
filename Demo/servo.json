@@ -1,0 +1,50 @@
+{
+  "collo_dx_sx": {
+    "canale": 1,
+    "posizione_minima": 0,
+    "posizione_massima": 180,
+    "posizione_iniziale": 90
+  },
+  "collo_su_giu": {
+    "canale": 2,
+    "posizione_minima": 90,
+    "posizione_massima": 135,
+    "posizione_iniziale": 120
+  },
+  "occhio_sx_orizzontale": {
+    "canale": 4,
+    "posizione_minima": 40,
+    "posizione_massima": 110,
+    "posizione_iniziale": 100
+  },
+  "occhio_dx_orizzontale": {
+    "canale": 5,
+    "posizione_minima": 70,
+    "posizione_massima": 140,
+    "posizione_iniziale": 70
+  },
+  "occhio_sx_verticale": {
+    "canale": 6,
+    "posizione_minima": 80,
+    "posizione_massima": 120,
+    "posizione_iniziale": 115
+  },
+  "occhio_dx_verticale": {
+    "canale": 7,
+    "posizione_minima": 75,
+    "posizione_massima": 180,
+    "posizione_iniziale": 90
+  },
+  "sopracciglio_SX": {
+    "canale": 8,
+    "posizione_minima": 80,
+    "posizione_massima": 140,
+    "posizione_iniziale": 125
+  },
+  "sopracciglio_DX": {
+    "canale": 9,
+    "posizione_minima": 80,
+    "posizione_massima": 140,
+    "posizione_iniziale": 125
+  }
+}

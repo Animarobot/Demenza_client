@@ -1,0 +1,288 @@
+{
+  "tono1.1": {
+    "tipo_movimento": "parallelo",
+    "movimenti": [
+      "collo_su_giu_medio"
+    ]
+  },
+  "tono1.2": {
+    "tipo_movimento": "parallelo",
+    "movimenti": [
+      "neutral_occhio_sx",
+      "neutral_occhio_dx"
+    ]
+  },
+  "tono2.1": {
+    "tipo_movimento": "parallelo",
+    "movimenti": [
+      "gira_collo",
+      "collo_su_giu_medio"
+    ]
+  },
+  "tono2.2": {
+    "tipo_movimento": "parallelo",
+    "movimenti": [
+      "oscillazione_sopracciglia_SX",
+      "oscillazione_sopracciglia_DX"
+    ]
+  },
+  "tono3": {
+    "tipo_movimento": "casuale",
+    "movimenti": [
+      "occhiolino_v2"
+    ]
+  },
+  "listening1.1": {
+    "tipo_movimento": "parallelo",
+    "movimenti": [
+      "look_down_sx",
+      "look_down_dx",
+      "neck_down"
+    ]
+  },
+  "listening1.2": {
+    "tipo_movimento": "parallelo",
+    "movimenti": [
+      "neutral_occhio_sx",
+      "neutral_occhio_sx"
+    ]
+  },
+  "listening1.3": {
+    "tipo_movimento": "parallelo",
+    "movimenti": [
+      "oscillazione_occhio_SX",
+      "oscillazione_occhio_DX"
+    ]
+  },
+  "listening1.4": {
+    "tipo_movimento": "parallelo",
+    "movimenti": [
+      "oscillazione_sopracciglia_SX",
+      "oscillazione_sopracciglia_DX"
+    ]
+  },
+  "listening": {
+    "tipo_movimento": "casuale",
+    "movimenti": [
+      "listening1.1"
+    ]
+  },
+  "start": {
+    "tipo_movimento": "alternativa",
+    "chiave": "tono",
+    "movimenti": {
+      "1": "tono1.1",
+      "2": "tono2.1",
+      "3": "tono3",
+      "4": "tono3",
+      "5": "gira_e_piega_testa_destra",
+      "6": "gira_e_piega_testa_sinistra",
+      "listening": "listening"
+    }
+  },
+  "oscillazione_sopracciglia_SX": {
+    "tipo_movimento": "oscillazione",
+    "nome_servo": "sopracciglio_SX",
+    "delta_time": 0.04,
+    "direzione": 1,
+    "ampiezza": 1.0,
+    "attesa_fine_corsa": 0.5,
+    "attesa_iniziale": 0.5,
+    "oneside": false,
+    "inversione": true
+  },
+  "oscillazione_sopracciglia_DX": {
+    "tipo_movimento": "oscillazione",
+    "nome_servo": "sopracciglio_DX",
+    "delta_time": 0.04,
+    "direzione": 1,
+    "ampiezza": 1.0,
+    "attesa_fine_corsa": 0.5,
+    "attesa_iniziale": 0.5,
+    "oneside": false,
+    "inversione": true
+  },
+  "gira_collo": {
+    "tipo_movimento": "oscillazione",
+    "nome_servo": "collo_dx_sx",
+    "delta_time": 0.05,
+    "direzione": -1,
+    "ampiezza": 0.5,
+    "attesa_fine_corsa": 0,
+    "attesa_iniziale": 0,
+    "oneside": true,
+    "inversione": false
+  },
+  "collo_su_giu_medio": {
+    "tipo_movimento": "oscillazione",
+    "nome_servo": "collo_su_giu",
+    "delta_time": 0.05,
+    "direzione": -1,
+    "ampiezza": 0.5,
+    "attesa_fine_corsa": 0,
+    "attesa_iniziale": 0.5,
+    "oneside": false,
+    "inversione": false
+  },
+  "annuire": {
+    "tipo_movimento": "oscillazione",
+    "nome_servo": "collo_su_giu",
+    "delta_time": 0.03,
+    "direzione": 1,
+    "ampiezza": 1.0,
+    "attesa_fine_corsa": 0.0,
+    "attesa_iniziale": 1.5,
+    "oneside": false,
+    "inversione": true
+  },
+  "look_down_sx": {
+    "tipo_movimento": "vai",
+    "nome_servo": "occhio_sx_verticale",
+    "delta_time": 0.05,
+    "destinazione": 25
+  },
+  "look_down_dx": {
+    "tipo_movimento": "vai",
+    "nome_servo": "occhio_dx_verticale",
+    "delta_time": 0.05,
+    "destinazione": 180
+  },
+  "neck_down": {
+    "tipo_movimento": "vai",
+    "nome_servo": "collo_su_giu",
+    "delta_time": 0.05,
+    "destinazione": 175
+  },
+  "oscillazione_occhio_SX": {
+    "tipo_movimento": "oscillazione",
+    "nome_servo": "occhio_sx_orizzontale",
+    "delta_time": 0.02,
+    "direzione": 1,
+    "ampiezza": 1.0,
+    "attesa_fine_corsa": 0,
+    "attesa_iniziale": 0,
+    "oneside": false,
+    "inversione": false
+  },
+  "oscillazione_occhio_DX": {
+    "tipo_movimento": "oscillazione",
+    "nome_servo": "occhio_dx_orizzontale",
+    "delta_time": 0.02,
+    "direzione": 1,
+    "ampiezza": 1.0,
+    "attesa_fine_corsa": 0,
+    "attesa_iniziale": 0,
+    "oneside": false,
+    "inversione": false
+  },
+  "listening3.3": {
+    "tipo_movimento": "sequenza",
+    "movimenti": [
+      "tono1.2",
+      "tono1.1"
+    ]
+  },
+  "neutral_occhio_dx": {
+    "tipo_movimento": "vai",
+    "nome_servo": "occhio_dx_verticale",
+    "delta_time": 0.02,
+    "destinazione": 125
+  },
+  "neutral_occhio_sx": {
+    "tipo_movimento": "vai",
+    "nome_servo": "occhio_sx_verticale",
+    "delta_time": 0.02,
+    "destinazione": 40
+  },
+  "neutral_neck": {
+    "tipo_movimento": "vai",
+    "nome_servo": "collo_su_giu",
+    "delta_time": 0.02,
+    "destinazione": 85
+  },
+  "oscillazione_occhio_vert_SX": {
+    "tipo_movimento": "oscillazione",
+    "nome_servo": "occhio_sx_verticale",
+    "delta_time": 0.08,
+    "direzione": 1,
+    "ampiezza": 1.0,
+    "attesa_fine_corsa": 0,
+    "attesa_iniziale": 0,
+    "oneside": true,
+    "inversione": false
+  },
+  "oscillazione_occhio_vert_DX": {
+    "tipo_movimento": "oscillazione",
+    "nome_servo": "occhio_dx_verticale",
+    "delta_time": 0.08,
+    "direzione": 1,
+    "ampiezza": 1.0,
+    "attesa_fine_corsa": 0,
+    "attesa_iniziale": 0,
+    "oneside": true,
+    "inversione": false
+  },
+  "occhiolino": {
+    "tipo_movimento": "oscillazione",
+    "nome_servo": "sopracciglio_SX",
+    "delta_time": 0.01,
+    "direzione": 1,
+    "ampiezza": 1.0,
+    "attesa_fine_corsa": 0,
+    "attesa_iniziale": 0,
+    "oneside": false,
+    "inversione": false
+  },
+  "occhiolino_v2": {
+    "tipo_movimento": "sequenza",
+    "movimenti": [
+      "l_open",
+      "l_close",
+      "l_open"
+    ]
+  },
+  "l_close": {
+    "tipo_movimento": "vai",
+    "nome_servo": "sopracciglio_DX",
+    "delta_time": 0.03,
+    "destinazione": 100
+  },
+  "l_open": {
+    "tipo_movimento": "vai",
+    "nome_servo": "sopracciglio_DX",
+    "delta_time": 0.03,
+    "destinazione": 125
+  },
+  "gira_testa_destra": { 
+    "tipo_movimento": "vai", 
+    "nome_servo": "collo_dx_sx", 
+    "delta_time": 0.05, 
+    "destinazione": 180
+  }, 
+  "piega_testa_giu": { 
+    "tipo_movimento": "vai", 
+    "nome_servo": "collo_su_giu", 
+    "delta_time": 0.05, 
+    "destinazione": 180
+  }, 
+  "gira_e_piega_testa_destra": { 
+    "tipo_movimento": "sequenza", 
+    "movimenti": [ 
+      "gira_testa_destra", 
+      "piega_testa_giu" 
+      ] 
+  },
+  "gira_testa_sinistra": {
+    "tipo_movimento": "vai", 
+    "nome_servo": "collo_dx_sx", 
+    "delta_time": 0.05, 
+    "destinazione": -40 
+  }, 
+  "gira_e_piega_testa_sinistra": { 
+    "tipo_movimento": "sequenza", 
+    "movimenti": [ 
+      "gira_testa_sinistra", 
+      "piega_testa_giu" 
+    ]
+  }
+}
