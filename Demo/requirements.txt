@@ -1,13 +1,9 @@
-torch
-transformers
-evaluate
-wave
 numpy
 pydub
 wave
 webrtcvad
-PIL
+Pillow
 setproctitle
 adafruit-circuitpython-motorkit
 adafruit-blinka 
-board 
+websockets
